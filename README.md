@@ -1,1 +1,9 @@
-# proyecto_final_web
+**MEMBERS**
+
+Javier Barboza
+
+Heylin Loaiza
+
+Jason Umaña
+
+Juan Carlos Sacasa
