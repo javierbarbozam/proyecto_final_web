@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <section class="payment">
+    <div>
+      <h2>Billing details</h2>
+      <form class="payment-form">
+        <label for="Name"><input type="text" placeholder="Name" name="Name" class="payment-form__input"></label>
+        <label for="Last name"><input type="text" placeholder="Last Name" name="Last name" class="payment-form__input"></label>
+        <label for="ID number"><input type="text" placeholder="ID Number" name="ID Number" class="payment-form__input"></label>
+        <label for="Email"><input type="email" placeholder="Emali" name="Email" class="payment-form__input"></label>
+        <label for="Phone number"><input type="tel" placeholder="Phone number" name="Phone number" class="payment-form__input"></label>
+        <label for="Country"></label>
+        <select name="Country" class="payment-form__input">
+          <option value=""></option>
+          <option value="Costa Rica">Costa Rica</option>
+          <option value="España">España</option>
+          <option value="Francia">Francia</option>
+          <option value="Belgica">Belgica</option>
+          <option value="Japon">Japon</option>
+          <option value="China">China</option>
+          <option value="Paises bajos">Paises bajos</option>
+        </select>
+        <label for="City"></label>
+        <select name="City" class="payment-form__input">
+          <option value=""></option>
+          <option value="Cartago">Cartago</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Paris">Paris</option>
+          <option value="Brucelas">Brucelas</option>
+          <option value="Tokio">Tokio</option>
+          <option value="Hong kong">Hong Kong</option>
+          <option value="Amsterdam">Amsterdam</option>
+        </select>
+        <label for="Address"><input type="text" placeholder="Address" name="Address" class="payment-form__input"></label>
+      </form>
+    </div>
+    <div class="payment-product">
+      <h3>Your order</h3>
+      <div>
+        <img src="../imgs/png/Group.png" alt="Headset" class="payment-product__img">
+        <p>DufteX</p>
+        <div>
+          <p> 1 </p>
+        </div>
+      </div>
+      <div>
+        <p>Subtotal</p>
+        <p>$250.00</p>
+      </div>
+      <div>
+        <p>Delivery</p>
+        <p>$250.00</p>
+      </div>
+      <div>
+        <p>Total</p>
+        <p>$250.00</p>
+      </div>
+      <button class="payment-product__buttom">Buy</button>
+    </div>
+  </section>
+
+</body>
+</html>
