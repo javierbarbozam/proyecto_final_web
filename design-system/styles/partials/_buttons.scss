@@ -1,0 +1,15 @@
+.add-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.add-button::after {
+	background-image: url(../../../icons/plus-icon.svg);
+	height: 200px;
+	width: 200px;
+}
+
+.add-button:active::after {
+
+}
