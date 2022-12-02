@@ -1,0 +1,18 @@
+@use './colors';
+
+// LIGHT BLUE BUTTONS
+
+.btn--lightblue {
+	box-sizing: border-box;
+	background-color: colors.$lightblue;
+	color: colors.$white;
+	font-size: 16px;
+	border-style: none;
+	padding: 10px 30px;
+	border-radius: 50px;
+}
+
+.btn--lightblue:hover {
+	background-color: darken(colors.$lightblue, 15%);
+	transform: scale(1.1);
+}

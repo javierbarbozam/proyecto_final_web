@@ -34,10 +34,15 @@
 
 .quantity__counter {
   text-align: center;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 body {
   background-color: #f5f5f7;
+  font-family: "Inter", "sans-serif";
+  font-size: 16px;
 }
 
 .visually-hidden {
@@ -48,6 +53,20 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.btn--lightblue {
+  box-sizing: border-box;
+  background-color: #33abee;
+  color: #fff;
+  font-size: 16px;
+  border-style: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+.btn--lightblue:hover {
+  background-color: #1084c4;
 }
 
 /*# sourceMappingURL=styles.css.map */
