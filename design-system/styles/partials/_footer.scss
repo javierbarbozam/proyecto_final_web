@@ -1,0 +1,25 @@
+@use './colors';
+
+footer {
+  background-color: colors.$black;
+  width: 100%;
+  color: colors.$white;
+}
+
+.footer--margin {
+  margin: 0 7%;
+  padding: 15px 0;
+}
+
+.footer--flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+
+.footer-list__about-us {
+  margin-left: 100px;
+}
+
+
+

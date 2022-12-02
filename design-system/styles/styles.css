@@ -125,4 +125,46 @@ body {
   height: 100px;
 }
 
+.header--alternative {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 10px;
+}
+
+.header__btn-return {
+  background: none;
+  border: none;
+}
+
+.header__btn-return::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url("../../../icons/arrow-left.svg") no-repeat;
+}
+
+footer {
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+}
+
+.footer--margin {
+  margin: 0 7%;
+  padding: 15px 0;
+}
+
+.footer--flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+
+.footer-list__about-us {
+  margin-left: 100px;
+}
+
 /*# sourceMappingURL=styles.css.map */

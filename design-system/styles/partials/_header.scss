@@ -30,3 +30,24 @@
 .input-icon {
   height: 100px;
 }
+
+.header--alternative{
+  background-color: colors.$white;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 10px;
+}
+
+.header__btn-return {
+  background: none;
+  border: none;
+}
+//no se ve el icono
+.header__btn-return::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url("../../../icons/arrow-left.svg") no-repeat;
+}
