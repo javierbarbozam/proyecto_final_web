@@ -1,0 +1,61 @@
+@use './colors';
+
+footer {
+  background-color: colors.$black;
+  width: 100%;
+  color: colors.$white;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: colors.$white;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.footer--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list--about-us {
+  margin-left: 100px;
+}
+
+.footer__list p {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 40px 0;
+}
+
+.footer__list li {
+  margin-bottom: 15px;
+}
+
+// SOCIAL MEDIA
+
+.footer__social--instagram::after {
+  content: url(../../icons/instagram-icon.svg);
+  margin-right: 20px;
+}
+
+.footer__social--facebook::after {
+  content: url(../../icons/facebook-icon.svg);
+}
+
+.footer__social--email::after {
+  content: url(../../icons/email-icon.svg);
+  margin-left: 20px;
+}
+
+.footer__rights {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}

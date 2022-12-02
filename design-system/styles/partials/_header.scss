@@ -1,0 +1,120 @@
+@use './colors';
+@use './main-rules';
+
+// MAIN HEADER
+
+.header {
+  background-color: colors.$white;
+  height: 90px;
+  padding: 0 10px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header__searchbar {
+  border: 2px solid colors.$black;
+  border-radius: 25px;
+  padding: 6px;
+  width: 300px;
+}
+
+.header__searchbar__icon {
+  background: none;
+  border: none;
+}
+
+.header__searchbar__icon::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url("../../../icons/search-icon.svg") no-repeat;
+} 
+
+.header__searchbar__icon:active::after {
+  background-size: 99%;
+}
+
+.header__search__input {
+  border: none;
+  padding: 5px 0;
+  width: 80%;
+  font-size: 17px;
+}
+
+.header__search__input::placeholder {
+  color: colors.$black;
+}
+
+.header__search__input:focus-visible {
+  outline: none;
+}
+
+.header__search__input:focus-visible::placeholder {
+  visibility: hidden;
+}
+
+.header .dufte-title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.header__cart {
+  position: relative;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.header__cart span {
+  font-size: 17px;
+  margin-right: 5px;
+}
+
+.header__cart::after {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  content: "";
+  background: url("../../icons/shopping-cart.svg") no-repeat;
+  position: relative;
+  top: 5px;
+}
+
+// ALTERNATIVE HEADER
+
+.header__btn-return {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.header__btn-return span {
+  display: inline-block;
+  font-size: 17px;
+  margin-left: 5px;
+}
+
+.header__btn-return::before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url("../../icons/arrow-left.svg") no-repeat;
+  background-size: 100%;
+}
+
+.header__btn-return:active::before {
+  background-size: 95%;
+}

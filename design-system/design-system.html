@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Design System</title>
+  </head>
+  <body>
+    <p>Logo:</p>
+    <p class="dufte-title">DUFTE</p>
+    <p>Add & Remove Items:</p>
+    <div class="quantity">
+      <button class="quantity__btn--substract"><span class="visually-hidden">Remove one item</span></button>
+      <span class="quantity__counter">1</span>
+      <button class="quantity__btn--add"><span class="visually-hidden">Add another item</span></button>
+    </div>
+    <p>Buttons:</p>
+    <button class="btn--lightblue">Buy</button>
+    <button class="btn--black">Buy</button>
+    <p>Header-main:</p>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__searchbar">
+          <button class="header__searchbar__icon"></button>
+          <input class="header__search__input" type="search" placeholder="Search" name="search" >
+        </div>
+        <p class="dufte-title">DUFTE</p>
+        <button class="header__cart"><span>Cart</span></button>
+      </div>
+    </header>
+    <p>Header-alternative:</p>
+    <header class="header">
+      <div class="header__wrapper">
+        <button class="header__btn-return"><span>Back</span></button>
+        <p class="dufte-title">DUFTE</p>
+      </div>
+    </header>
+    <p>Footer:</p>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer--flex">
+          <div class="footer--flex">
+            <div class="footer__list">
+              <p>Support</p>
+              <ul>
+                <li><a href="#">Repairs</a></li>
+                <li><a href="#">Warranties</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Authorized Centers</a></li>
+              </ul>
+            </div>
+            <div class="footer__list footer__list--about-us">
+              <p>About us</p>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Who we are</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="footer__social--instagram"><span class="visually-hidden">go to our instagram</span></a>
+            <a href="#" class="footer__social--facebook"><span class="visually-hidden">go to our facebook</span></a>
+            <a href="#" class="footer__social--email"><span class="visually-hidden">send us an email</span></a>
+          </div>
+        </div>
+        <div class="footer__rights">
+          <p>©Dufte.All rights reserved 2022.</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
