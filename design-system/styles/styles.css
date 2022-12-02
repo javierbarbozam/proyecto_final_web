@@ -9,6 +9,15 @@ body {
   margin: 0;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .dufte-title {
   font-family: "Playfair Display", "serif";
   font-size: 30px;
@@ -185,7 +194,7 @@ body {
   width: 30px;
   height: 22px;
   content: "";
-  background: url("../../../icons/shopping-cart.svg") no-repeat;
+  background: url("../../icons/shopping-cart.svg") no-repeat;
   position: relative;
   top: 5px;
 }
@@ -208,7 +217,7 @@ body {
   width: 30px;
   height: 30px;
   content: "";
-  background: url("../../../icons/arrow-left.svg") no-repeat;
+  background: url("../../icons/arrow-left.svg") no-repeat;
   background-size: 100%;
 }
 
@@ -220,21 +229,58 @@ footer {
   background-color: #000;
   width: 100%;
   color: #fff;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer--margin {
-  margin: 0 7%;
-  padding: 15px 0;
+footer a {
+  color: #fff;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .footer--flex {
   display: flex;
   justify-content: space-between;
-  margin-top: 34px;
 }
 
-.footer-list__about-us {
+.footer__list--about-us {
   margin-left: 100px;
+}
+
+.footer__list p {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 40px 0;
+}
+
+.footer__list li {
+  margin-bottom: 15px;
+}
+
+.footer__social--instagram::after {
+  content: url(../../icons/instagram-icon.svg);
+  margin-right: 20px;
+}
+
+.footer__social--facebook::after {
+  content: url(../../icons/facebook-icon.svg);
+}
+
+.footer__social--email::after {
+  content: url(../../icons/email-icon.svg);
+  margin-left: 20px;
+}
+
+.footer__rights {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
