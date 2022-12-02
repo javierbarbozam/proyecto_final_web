@@ -1,3 +1,7 @@
+@use './colors';
+
+// ADD & SUBSTRACT BUTTON
+
 .quantity__btn--add, .quantity__btn--substract {
   position: relative;
   box-sizing: border-box;
@@ -35,19 +39,3 @@
 .quantity__counter {
   text-align: center;
 }
-
-body {
-  background-color: #f5f5f7;
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/*# sourceMappingURL=styles.css.map */
