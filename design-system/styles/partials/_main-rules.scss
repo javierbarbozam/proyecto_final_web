@@ -1,14 +1,20 @@
 @use './colors';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
 	background-color: colors.$lightgray;
 	font-family: 'Inter', 'sans-serif';
   font-size: 16px;
+  margin: 0;
 }
 
 .dufte-title {
   font-family: 'Playfair Display', 'serif';
   font-size: 30px;
+  text-align: center;
 }
 
 .visually-hidden {
