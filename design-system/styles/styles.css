@@ -45,7 +45,7 @@ body {
   font-size: 16px;
 }
 
-h1 {
+.dufte-title {
   font-family: "Playfair Display", "serif";
   font-size: 30px;
 }
@@ -94,6 +94,35 @@ h1 {
   color: #000;
   border: 2px solid #000;
   transform: scale(1.1);
+}
+
+.header--main {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 10px;
+}
+
+#search {
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 6px;
+  width: 300px;
+}
+
+#search::placeholder {
+  color: #000;
+  font-size: 17px;
+}
+
+.input-icon::after {
+  background: url("../../../icons/search-icon.svg") no-repeat;
+}
+
+.input-icon {
+  height: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */

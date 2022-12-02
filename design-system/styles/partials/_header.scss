@@ -1,0 +1,32 @@
+@use './colors';
+@use './main-rules';
+
+
+.header--main {
+  background-color: colors.$white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 10px;
+}
+
+#search {
+  border: 2px solid colors.$black;
+  border-radius: 25px;
+  padding: 6px;
+  width: 300px;
+}
+
+#search::placeholder {
+  color: colors.$black;
+  font-size: 17px;
+}
+
+.input-icon::after {
+  background: url("../../../icons/search-icon.svg") no-repeat;
+} 
+
+.input-icon {
+  height: 100px;
+}
