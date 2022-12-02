@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-
 <body>
-
-  <section class="payment">
-    <div>
-      <h1>Billing details</h1>
-      <form class="payment-form">
-        <label for="name">
-          <input type="text" id="name" name="name" placeholder="Name" class="payment-form__input">
-        </label>
-        <label for="last-name">
-          <input type="text" id="last-name" name="last-name" placeholder="Last Name" class="payment-form__input">
-        </label>
-        <label for="id-number">
-          <input type="text" id="id-number" name="id-number" placeholder="ID Number" class="payment-form__input">
-        </label>
-        <label for="email">
-          <input type="email" id="email" name="email" placeholder="Email" class="payment-form__input">
-        </label>
-        <label for="phone-number">
-          <input type="tel" id="phone-number" name="phone-number" placeholder="Phone number" class="payment-form__input">
-        </label>
-        <label for="country">
-          <select name="country" id="country" class="payment-form__input">
-            <option value=""></option>
-            <option value="1">Costa Rica</option>
-            <option value="2">España</option>
-            <option value="3">Francia</option>
-            <option value="4">Belgica</option>
-            <option value="5">Japon</option>
-            <option value="6">China</option>
-            <option value="7">Paises bajos</option>
-          </select>
-        </label>
-        <label for="city">
-          <select name="city" id="city" class="payment-form__input">
-            <option value=""></option>
-            <option value="1">Cartago</option>
-            <option value="2">Madrid</option>
-            <option value="3">Paris</option>
-            <option value="4">Brucelas</option>
-            <option value="5">Tokio</option>
-            <option value="6">Hong Kong</option>
-            <option value="7">Amsterdam</option>
-          </select>
-        </label>
-        <label for="address">
-          <input type="text" id="address" name="address" placeholder="Address" class="payment-form__input">
-        </label>
-      </form>
-    </div>
-    <div class="payment-product">
-      <h3>Your order</h3>
+  <main>
+    <section class="payment">
       <div>
-        <img src="../imgs/png/white-headphones.png" alt="Headset" class="payment-product__img">
-        <p>DufteX</p>
+        <h1>Billing details</h1>
+        <form class="payment-form">
+          <label for="name">
+            <input type="text" name="name" placeholder="Name" class="payment-form__input">
+          </label>
+          <label for="last-name">
+            <input type="text" name="last-name" placeholder="Last Name" class="payment-form__input">
+          </label>
+          <label for="id-number">
+            <input type="text" name="id-number" placeholder="ID Number" class="payment-form__input">
+          </label>
+          <label for="email">
+            <input type="email" name="email" placeholder="Email" class="payment-form__input">
+          </label>
+          <label for="phone-number">
+            <input type="tel" name="phone-number" placeholder="Phone number" class="payment-form__input">
+          </label>
+          <label for="country">
+            <select name="country" id="country" class="payment-form__input">
+              <option value=""></option>
+              <option value="costa-rica">Costa Rica</option>
+              <option value="spain">Spain</option>
+              <option value="france">France</option>
+              <option value="belgium">Belgium</option>
+              <option value="japan">japan</option>
+              <option value="china">China</option>
+              <option value="netherlands">Netherlands</option>
+            </select>
+          </label>
+          <label for="city">
+            <select name="city" id="city" class="payment-form__input">
+              <option value=""></option>
+              <option value="cartago">Cartago</option>
+              <option value="madrid">Madrid</option>
+              <option value="paris">Paris</option>
+              <option value="brussels">Brussels</option>
+              <option value="tokio">Tokio</option>
+              <option value="hong-kong">Hong Kong</option>
+              <option value="amsterdam">Amsterdam</option>
+            </select>
+          </label>
+          <label for="address">
+            <input type="text" id="address" name="address" placeholder="Address" class="payment-form__input">
+          </label>
+        </form>
+      </div>
+      <div class="payment-product">
+        <h3>Your order</h3>
         <div>
-          <p> 1 </p>
+          <img src="../imgs/png/white-headphones.png" alt="Headset" class="payment-product__img">
+          <p>DufteX</p>
+          <div>
+            <p> 1 </p>
+          </div>
         </div>
+        <div>
+          <p>Subtotal</p>
+          <p>$250.00</p>
+        </div>
+        <div>
+          <p>Delivery</p>
+          <p>$250.00</p>
+        </div>
+        <div>
+          <p>Total</p>
+          <p>$250.00</p>
+        </div>
+        <button class="payment-product__button">Buy</button>
       </div>
-      <div>
-        <p>Subtotal</p>
-        <p>$250.00</p>
-      </div>
-      <div>
-        <p>Delivery</p>
-        <p>$250.00</p>
-      </div>
-      <div>
-        <p>Total</p>
-        <p>$250.00</p>
-      </div>
-      <button class="payment-product__buttom">Buy</button>
-    </div>
-  </section>
-
+    </section>
+  </main>
 </body>
-
 </html>
