@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DUFTE</title>
+  <title>DUFTE | Payment</title>
 </head>
 <body>
-  <header>
-    <button>Back</button>
-    <!--use position -->
-    <p>DUFTE</p>
+  <header class="header">
+    <div class="header__wrapper">
+      <button class="header__btn-return"><span>Back</span></button>
+      <p class="dufte-title">DUFTE</p>
+    </div>
   </header>
   <main>
     <section class="payment">
@@ -87,24 +88,36 @@
     </section>
   </main>
   <footer>
-    <p>Support</p>
-    <ul>
-      <li>Repairs</li>
-      <li>Warranties</li>
-      <li>FQA</li>
-      <li>Authorized Center</li>
-    </ul>
-    <p>About us</p>
-    <ul>
-      <li>Contact</li>
-      <li>Who we are?</li>
-    </ul>
-    <a href="#"><span>go to our instagram</span></a>
-    <a href="#"><span>go to our facebook</span></a>
-    <a href="#"><span>send us an email</span></a>
-    <div>
-      <p>©Dufte.All rights reserved 2022.</p>
-      <p>Privacy Policy</p>
+    <div class="footer--margin">
+      <div class="footer--flex">
+        <div class="footer--flex">
+          <div>
+            <p>Support</p>
+            <ul>
+              <li>Repairs</li>
+              <li>Warranties</li>
+              <li>FQA</li>
+              <li>Authorized Center</li>
+            </ul>
+          </div>
+          <div class="footer-list__about-us">
+            <p>About us</p>
+            <ul>
+              <li>Contact</li>
+              <li>Who we are?</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <a href="#" class="footer__instagram-icon"><span>go to our instagram</span></a>
+          <a href="#" class="footer__facebook-icon"><span>go to our facebook</span></a>
+          <a href="#" class="footer__email-icon"><span>send us an email</span></a>
+        </div>
+      </div>
+      <div class="footer--flex">
+        <p>©Dufte.All rights reserved 2022.</p>
+        <p>Privacy Policy</p>
+      </div>
     </div>
   </footer>
 </body>
