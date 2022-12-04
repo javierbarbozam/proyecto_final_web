@@ -1,0 +1,37 @@
+@use './colors';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: colors.$lightgray;
+	font-family: 'Inter', 'sans-serif';
+  font-size: 16px;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dufte-title {
+  font-family: 'Playfair Display', 'serif';
+  font-size: 30px;
+  text-align: center;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
