@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
   <title>DUFTE | Home</title>
 </head>
 <body>
@@ -18,29 +20,37 @@
     </div>
   </header>
   <main>
-    <div>
-      <div>
-        <h1>DufteX</h1>
-        <p>DUAL FUNCTION</p>
-        <p>waterproof wireless headphones/speakers</p>
-        <div>
-          <a href="./confirmation/confirmation.html">Buy</a>
-          <a href="./description/description.html">See more</a>
+    <div class="hero-section">
+      <div class="hero-section--flex">
+        <div class="hero-section__info">
+          <div class="hero-section__info--wrapper">
+            <h1 class="hero-section__info--title">DufteX</h1>
+            <p class="hero-section__info--subtitle">DUAL FUNCTION</p>
+            <p class="hero-section__info--description">waterproof wireless headphones/speakers</p>
+            <div class="hero-section__info--btn">
+              <a href="./confirmation/confirmation.html" class="btn--black">Buy</a>
+              <a href="./description/description.html" class="btn--black">See more</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-section__picture">
+          <img class="hero-section__picture__img" src="./imgs/png/white-headphones.png" alt="DufteX headphones white color">
+          <div class="hero-section__picture__reflect"></div> 
+          <!-- Div above only for reflection -->
         </div>
       </div>
-      <img src="./imgs/png/white-headphones.png" alt="DufteX headphones white color">
     </div>
     <!-- edit img -->
     <div>
-      <img src="./imgs/png/headphones-pink.png" alt="DufteX headphones pink color">
+      <!-- <img src="./imgs/png/headphones-pink.png" alt="DufteX headphones pink color"> -->
       <p>Pink</p>
     </div>
     <div>
-      <img src="./imgs/png/headphones-black.png" alt="DufteX headphones pink black">
+      <!-- <img src="./imgs/png/headphones-black.png" alt="DufteX headphones pink black"> -->
       <p>Black</p>
     </div>
     <div>
-      <img src="./imgs/png/headphones-black-red.png" alt="DufteX headphones pink black-red">
+      <!-- <img src="./imgs/png/headphones-black-red.png" alt="DufteX headphones pink black-red"> -->
       <p>Black-red</p>
     </div>
   </main>

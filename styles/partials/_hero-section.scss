@@ -1,0 +1,186 @@
+@use "./colors";
+@use "./buttons";
+
+// Minimum of 320px styles
+
+.hero-section {
+  background-color: colors.$black;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+// Information styles
+
+.hero-section__info--title {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+  color: colors.$white;
+}
+
+.hero-section__info--subtitle {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+  color: colors.$white;
+}
+
+.hero-section__info--description {
+  margin: 0;
+  text-align: center;
+  color: colors.$white;
+}
+
+// Button styles
+
+.hero-section__info--btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.hero-section__info--btn a:first-child {
+  margin-right: 20px;
+}
+
+.hero-section__info--btn .btn--black {
+  padding: 10px 20px;
+}
+
+// Image styles
+
+.hero-section__picture {
+  position: relative;
+  height: fit-content;
+}
+
+.hero-section__picture__img {
+  display: block;
+  margin: 40px auto 0 auto;
+  width: 200px;
+  position: relative;
+}
+
+.hero-section__picture__reflect {
+  background: url(../../images/hero-headphones.png);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform: scaleY(-1);
+  bottom: -93%;
+  left: 18%;
+  opacity: 0.4;
+}
+
+// Minimum of 768px styles
+
+@media (min-width: 768px) {
+  .hero-section {
+    height: 600px;
+  }
+  
+  .hero-section--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+  }
+  
+  // Information styles
+  
+  .hero-section__info--title {
+    font-size: 26px;
+  }
+  
+  .hero-section__info--subtitle {
+    font-size: 32px;
+    margin: 30px 0;
+  }
+  
+  .hero-section__info--description {
+    font-size: 18px;
+  }
+  
+  // Button styles
+  
+  .hero-section__info--btn {
+    margin-top: 50px;
+  }
+  
+  .hero-section__info--btn .btn--black {
+    padding: 10px 25px;
+  }
+  
+  // Image styles
+  
+  .hero-section__picture__img {
+    margin: 0;
+    width: 350px;
+  }
+  
+  .hero-section__picture__reflect {
+    width: 350px;
+    height: 350px;
+    left: 0;
+  }
+}
+
+// Miminum of 1024px styles
+
+@media (min-width: 1024px) {
+  .hero-section {
+    height: 750px; // revisar
+  }
+  
+  .hero-section--flex {
+    width: 1024px;
+  }
+  
+  // Information styles
+  
+  .hero-section__info--title {
+    font-size: 32px;
+  }
+  
+  .hero-section__info--subtitle {
+    font-size: 38px;
+    margin: 40px 0;
+  }
+  
+  .hero-section__info--description {
+    font-size: 22px;
+  }
+  
+  // Button styles
+  
+  .hero-section__info--btn {
+    margin-top: 60px;
+  }
+  
+  .hero-section__info--btn a:first-child {
+    margin-right: 30px;
+  }
+  
+  .hero-section__info--btn .btn--black {
+    padding: 15px 35px;
+  }
+  
+  // Image styles
+  
+  .hero-section__picture__img {
+    margin: 0;
+    width: 500px;
+  }
+  
+  .hero-section__picture__reflect {
+    width: 500px;
+    height: 500px;
+    left: 0;
+  }
+}

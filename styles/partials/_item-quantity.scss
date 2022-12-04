@@ -1,0 +1,44 @@
+@use './colors';
+
+// ADD & SUBSTRACT BUTTON
+
+.quantity__btn--add, .quantity__btn--substract {
+  position: relative;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity__btn--add::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url("../../icons/plus-icon.svg") no-repeat;
+}
+
+.quantity__btn--add:active::after {
+  background-size: 99%;
+}
+
+.quantity__btn--substract::after {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url("../../icons/substrat-icon.svg") no-repeat;
+}
+
+.quantity__btn--substract:active::after {
+  background-size: 80%;
+}
+
+.quantity__counter {
+  text-align: center;
+  background-color: colors.$white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
