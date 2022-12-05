@@ -8,6 +8,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.footer__stroke {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 8px;
+  background-color: colors.$lightblue;
 }
 
 footer a {
@@ -71,8 +80,13 @@ footer a {
 
 //TABLET
 @media (min-width: 768px) {
+
+  .footer__stroke {
+    height: 12px;
+  }
+
   footer {
-    height: 343px;
+    height: 450px;
   }
 
   .footer__wrapper {
