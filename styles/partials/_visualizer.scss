@@ -1,0 +1,90 @@
+@use "./main-rules";
+
+// Minimun 320px styles
+
+.visualizer {
+  // 	display: flex;
+  // 	overflow: scroll;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.visualizer__box {
+  position: relative;
+}
+
+.visualizer__box__img {
+  width: 150px;
+  height: 180px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.visualizer__box__anchor {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.visualizer__box a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.visualizer__box:hover .visualizer__box__img {
+  transform: scale(1.1);
+}
+.visualizer__box:hover .visualizer__box__anchor {
+  transform: scale(1.1);
+  transform: translateY(5px);
+  font-weight: 700;
+}
+
+// Minimum 768px styles
+
+@media (min-width: 768px) {
+  .visualizer {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 768px;
+    width: 100%;
+    max-width: 860px;
+    margin-top: 50px;
+    overflow-x: scroll;
+    padding: 20px 10px 5px;   // padding in orden to mantain hover effect intact
+  }
+  
+  .visualizer__box__img {
+    width: 200px;
+    height: 250px;
+  }
+
+}
+
+// Minimum 1024px styles
+
+@media (min-width: 1024px) {
+  .visualizer {
+    min-width: 1024px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 100px; // revisar
+    overflow-x: scroll;
+  }
+  
+  .visualizer__box__img {
+    width: 280px;
+    height: 330px;
+  }
+
+
+}
