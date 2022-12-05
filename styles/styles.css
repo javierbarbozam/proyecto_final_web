@@ -224,6 +224,7 @@ a {
 
 .visualizer__box {
   position: relative;
+  cursor: pointer;
 }
 
 .visualizer__box__img {
