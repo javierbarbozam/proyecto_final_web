@@ -1,0 +1,140 @@
+@use "./main-rules";
+@use "./colors";
+@use "./buttons";
+
+// Minimum of 320px styles
+
+// Photographs preview
+
+.product-preview__list {
+  position: relative;
+  height: 380px;
+}
+
+.product-preview__list--flex {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 320px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.product-preview__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  width: 110px;
+  background-color: colors.$white;
+  position: relative;
+  top: 250px;
+}
+
+.product-preview__img:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.product-preview__img img { // cambiar clase "img img"
+  width: 100px;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.product-preview__img--main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 230px;
+  background-color: colors.$white;
+  margin: auto;
+  position: relative;
+  top: -80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.product-preview__img--main img {
+  width: 200px;
+}
+
+.product-preview__list--left {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: -30px;
+  top: 10px;
+}
+
+.product-preview__list--right {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 250px;
+  top: 10px;
+}
+
+.product-preview__list--main {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.product-preview__list--left::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../../icons/left-arrow.svg) no-repeat;
+}
+
+.product-preview__list--right::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../../icons/right-arrow.svg) no-repeat;
+}
+
+.product-preview__list--right:active::after {
+  transform: scale(0.8);
+}
+
+.product-preview__list--left:active::after {
+  transform: scale(0.8);
+}
+
+// Product customization
+
+.product-customize {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 10px;
+}
+
+.product-customize__pricing {
+  margin-right: 40px;
+}
+
+.product-customize__pricing--title {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.product-customize__pricing--amount {
+  font-size: 20px;
+  margin: 0;
+}

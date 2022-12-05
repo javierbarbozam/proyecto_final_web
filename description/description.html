@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
   <title>DUFTE | Product</title>
 </head>
 <body>
@@ -19,43 +21,58 @@
   </header>
   <main>
     <section>
-      <div>
-        <div>
-          <img src="../imgs/png/headphones1.png" alt="">
-          <img src="../imgs/png/headphones2.png" alt="">
-          <img src="../imgs/png/headphones3.png" alt="">
+
+
+
+      <div class="product-preview">
+        <ul class="product-preview__list">
+          <div class="product-preview__list--flex">
+            <li class="product-preview__img"><img src="../images/description-headphones-one.png" alt=""></li>
+            <li class="product-preview__img"><img src="../images/description-headphones-two.png" alt=""></li>
+            <li class="product-preview__img"><img src="../images/description-headphones-three.png" alt=""></li>
+          </div>
+          <div class="product-preview__list--main">
+            <button class="product-preview__list--left"><span class="visually-hidden">Go to previous image</span></button>
+            <button class="product-preview__list--right"><span class="visually-hidden">Go to next image</span></button>
+            <li class="product-preview__img--main"><img src="../images/description-headphones-four.png" alt=""></li>
+          </div>
+        </ul>
+        <div class="product-customize">
+          <div class="product-customize__pricing">
+            <h1 class="product-customize__pricing--title">DufteX</h1>
+            <p class="product-customize__pricing--amount">$250.00</p>
+          </div>
+          <form action="post">
+            <legend>Color</legend>
+            <label><input type="radio" value="pink" name="product-color" required checked>Pink</label>
+            <label><input type="radio" value="White" name="product-color">White</label>
+            <label><input type="radio" value="black" name="product-color">Black</label>
+            <label><input type="radio" value="black_red" name="product-color">Black and red</label>
+          </form>
         </div>
-        <img src="../imgs/png/white-headphones.png" alt="">
-      </div>
-      <div>
-        <h1>DufteX</h1>
-        <p>$250.00</p>
-      </div>
-      <form action="post">
-        <legend>Color</legend>
-        <label><input type="radio" value="pink" name="product-color" required checked>Pink</label>
-        <label><input type="radio" value="White" name="product-color">White</label>
-        <label><input type="radio" value="black" name="product-color">Black</label>
-        <label><input type="radio" value="black_red" name="product-color">Black and red</label>
-      </form>
-      <div>
         <div>
-          <button><span>Remove one item</span></button>
-          <span>1</span>
-          <button><span>Add another item</span></button>
+          <div>
+            <button><span>Remove one item</span></button>
+            <span>1</span>
+            <button><span>Add another item</span></button>
+          </div>
+          <button>Add to cart</button>
+          <a href="../confirmation/confirmation.html">Buy</a>
         </div>
-        <button>Add to cart</button>
-        <a href="../confirmation/confirmation.html">Buy</a>
+        <!-- <div>
+          <p>Share</p>
+          <a href="#"><span>Share this item on instagram</span></a>
+          <a href="#"><span>Share this item on Facebook</span></a>
+          <a href="#"><span>Share this item on email</span></a>
+        </div> -->
       </div>
-      <div>
-        <p>Share</p>
-        <a href="#"><span>Share this item on instagram</span></a>
-        <a href="#"><span>Share this item on Facebook</span></a>
-        <a href="#"><span>Share this item on email</span></a>
-      </div>
+      
+  
+
+
       <div>
         <p>Description</p>
-        <ul>
+        <!-- <ul>
           <li>Wireless noise-canceling headphones: the perfect balance of silence, comfort and sound. Bose Uses tiny microphones to measure, compare and react to outside noise, canceling it with opposing signals.</li>
           <li>High-fidelity audio: TriPort acoustic architecture delivers depth and fullness. Volume-optimized active EQ maintains balanced performance at any volume, so bass stays consistent when turned off and music remains clear when turned on.</li>
           <li>Quiet and conscious modes: choose quiet mode for complete noise cancellation, or conscious mode to bring the outdoors into the headphones around your ear and listen to your surroundings and your music at the same time.</li>
@@ -64,16 +81,20 @@
           <li>Around-the-ear headphones charge via USB-C: headphones charge through the cable</li>
           <li>Bluetooth noise-canceling wireless headphones: these headphones are optimized for a strong, reliable Bluetooth connection within 30 feet of the paired device.</li>
           <li>Bose Music App: The app guides you through the guided setup of your over-ear headphones, allowing you to get started easily. Plus, access adjustable noise cancellation settings, manage your Bluetooth connections, enable shortcuts and more.</li>
-        </ul>
+        </ul> -->
       </div>
     </section>
     <!--cart-sectio-->
+    <!--
+    <section>
       <button>close cart</button>
       <div>
         <button><span>Remove Item</span></button>
-        <div><img src="../imgs/png/white-headphones.png" alt=""></div><!--this div can be used for right border gray color-->
-        <!--gray border goes here-->
-        <div><!--this div can be used for left border gray color-->
+        <div><img src="../imgs/png/white-headphones.png" alt=""></div>
+        this div can be used for right border gray color
+        gray border goes here
+        <div>
+          this div can be used for left border gray color
           <span>DufteX</span>
           <span>$250.00</span>
           <img src="../imgs/svg/white-color-circle.svg" alt="">
@@ -85,7 +106,7 @@
         </div>
         <a href="../confirmation/confirmation.html">Buy</a>
       </div>
-    </section>
+</section> -->
   </main>
   <footer>
     <div class="footer__wrapper">
