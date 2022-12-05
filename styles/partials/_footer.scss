@@ -12,11 +12,16 @@ footer {
 
 footer a {
   color: colors.$white;
+  cursor: pointer;
+  font-size: 12px;
 }
 
 .footer__wrapper {
   margin: 0 auto;
-  width: 1200px;
+  padding: 0 50px;
+  min-width: 320px;
+  max-width: 600px;
+  width: 100%
 }
 
 .footer--flex {
@@ -25,13 +30,13 @@ footer a {
 }
 
 .footer__list--about-us {
-  margin-left: 100px;
+  margin-left: 30px;
 }
 
 .footer__list p {
   font-weight: 700;
-  font-size: 20px;
-  margin: 0 0 40px 0;
+  font-size: 16px;
+  margin: 0 0 15px 0;
 }
 
 .footer__list li {
@@ -40,22 +45,92 @@ footer a {
 
 // SOCIAL MEDIA
 
+.footer__social {
+  text-align: center;
+  padding: 40px 0;
+}
+
 .footer__social--instagram::after {
-  content: url(../../icons/instagram-icon.svg);
+  content: url(../icons/instagram-icon.svg);
   margin-right: 20px;
 }
 
 .footer__social--facebook::after {
-  content: url(../../icons/facebook-icon.svg);
+  content: url(../icons/facebook-icon.svg);
 }
 
 .footer__social--email::after {
-  content: url(../../icons/email-icon.svg);
+  content: url(../icons/email-icon.svg);
   margin-left: 20px;
 }
 
 .footer__rights {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
+  font-size: 12px;
+  text-align: center;
+}
+
+//TABLET
+@media (min-width: 768px) {
+  footer {
+    height: 343px;
+  }
+
+  .footer__wrapper {
+    min-width: 768px;
+    max-width: 900px;
+  }
+  
+  .footer__list--about-us {
+    margin-left: 80px;
+  }
+  
+  .footer__list p {
+    font-size: 20px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+
+  .footer--flex-social-media{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__rights {
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+}
+
+
+//DESKTOP
+@media (min-width: 1024px) {
+  
+  .footer__wrapper {
+    min-width: 900px;
+    max-width: 1024px;
+  }
+
+  .footer__list--about-us {
+    margin-left: 100px;
+  }
+  
+  .footer__list p {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0 0 40px 0;
+  }
+
+  footer a {
+    font-size: 18px;
+  }
+    
+  .footer__rights {
+    font-size: 18px;
+  }
+  
 }
