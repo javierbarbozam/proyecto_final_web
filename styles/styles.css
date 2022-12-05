@@ -224,7 +224,6 @@ a {
 
 .visualizer__box {
   position: relative;
-  cursor: pointer;
 }
 
 .visualizer__box__img {
@@ -238,15 +237,19 @@ a {
 }
 
 .visualizer__box__anchor {
-  display: block;
   text-align: center;
   font-size: 22px;
   transition-duration: 0.3s;
   transition-property: transform;
 }
 
-.visualizer__box a::after {
+.visualizer__box__anchor--align {
+  text-align: center;
+}
+
+.visualizer__box .visualizer__box__anchor::after {
   content: "";
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
