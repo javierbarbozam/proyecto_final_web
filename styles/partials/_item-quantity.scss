@@ -19,7 +19,7 @@
 }
 
 .quantity__btn--add:active::after {
-  background-size: 99%;
+  transform: scale(0.8);
 }
 
 .quantity__btn--substract::after {
@@ -33,7 +33,7 @@
 }
 
 .quantity__btn--substract:active::after {
-  background-size: 80%;
+  transform: scale(0.8);
 }
 
 .quantity__counter {
@@ -41,4 +41,5 @@
   background-color: colors.$white;
   padding: 10px 15px;
   border-radius: 10px;
+  margin: 0 10px;
 }
