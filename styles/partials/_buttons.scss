@@ -3,6 +3,7 @@
 // LIGHT BLUE BUTTONS
 
 .btn--lightblue {
+  display: inline-block;
   box-sizing: border-box;
   background-color: colors.$lightblue;
   color: colors.$white;
