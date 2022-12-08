@@ -7,6 +7,10 @@
 
 // Photographs preview
 
+.preview {
+  margin-top: 20px;
+}
+
 .preview__gallery {
   position: relative;
   height: 380px;
@@ -267,6 +271,10 @@
 
   // Photographs preview
 
+  .preview {
+    margin-top: 40px;
+  }
+
   .preview__gallery {
     height: fit-content;
     display: flex;
@@ -336,7 +344,7 @@
   .preview {
     display: flex;
     width: fit-content;
-    margin: 0 auto;
+    margin: 60px auto 0;
   }
 
   // Photographs styles
