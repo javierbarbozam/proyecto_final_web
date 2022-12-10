@@ -1,0 +1,169 @@
+//rules
+@use './colors';
+
+//payment content
+.payment {
+  width: 100%;
+
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+}
+
+.payment-box {
+  width: 100%;
+
+}
+
+//styles payment form
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.payment-form__input {
+  width: 200px;
+  height: 30px;
+  border: 2px solid colors.$black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: colors.$input-color;
+  opacity: 0.5;
+}
+
+::placeholder{
+  color: colors.$black;
+  font-size: 12px;
+}
+
+
+//styles payment product
+.payment-product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-product__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.payment-product__price--line{
+  border-bottom: 2px solid;
+}
+
+.payment-product__elements {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment-product__quantity {
+  background-color: colors.$white;
+  border: 2px solid;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+//styles payment button 
+.payment-product__button {
+  background-color: colors.$lightblue ;
+  color: colors.$white;
+  border: 2px;
+  border-radius: 5px;
+  width: 116px;
+  margin: 10px 0;
+  height: 30px;
+}
+
+
+
+//responsive 768
+
+@media (min-width: 768px) {
+  .payment {
+    width: 100%;
+
+    h1{
+      font-size: 20px;
+    }
+
+    h3{
+      font-size: 18px;
+    }
+
+    p{
+      font-size: 14px;
+    }
+
+    ::placeholder{
+      font-size: 14px;
+    }
+  }
+
+  .payment-form__input {
+    width: 560px;
+    height: 50px;
+  }
+}
+
+
+
+//responsive 1024
+
+@media (min-width: 1024px) {
+  .payment {
+    width: 1024px;
+    margin: 0 auto;
+    //background-color: colors.$white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    h1{
+      font-size: 24px;
+    }
+
+    h3{
+      font-size: 20px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+
+    ::placeholder{
+      font-size: 18px;
+    }
+  }
+
+  .payment-product__elements {
+    display: flex;
+    flex-direction: column;
+  }
+}
