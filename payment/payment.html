@@ -37,7 +37,7 @@
           </label>
           <label for="country">
             <select name="country" id="country" class="payment-form__input">
-              <option value=""></option>
+              <option value="country"  selected="selected"> Country</option>
               <option value="costa-rica">Costa Rica</option>
               <option value="spain">Spain</option>
               <option value="france">France</option>
@@ -49,7 +49,7 @@
           </label>
           <label for="city">
             <select name="city" id="city" class="payment-form__input">
-              <option value=""></option>
+              <option value="city" selected="selected"> City</option>
               <option value="cartago">Cartago</option>
               <option value="madrid">Madrid</option>
               <option value="paris">Paris</option>
@@ -72,7 +72,7 @@
             <p>DufteX</p>
           </div>
           <div class="payment-product__quantity">
-            <p> 1 </p>
+            <span> 1 </span>
           </div>
         </div>
         <div class="payment-product__price payment-product__price--line">
@@ -87,7 +87,9 @@
           <p>Total</p>
           <p>$250.00</p>
         </div>
-        <button class="payment-product__button">Buy</button>
+        <div class= "payment-product__price">
+        <button class="payment-product__button btn--lightblue">Buy</button>
+        </div>
       </div>
     </section>
   </main>

@@ -19,7 +19,7 @@
     font-size: 14px;
   }
 
-  p{
+  p {
     font-size: 12px;
   }
 }
@@ -41,18 +41,17 @@
 .payment-form__input {
   width: 200px;
   height: 30px;
-  border: 2px solid colors.$black;
-  border-radius: 10px;
+  border: 1px solid colors.$input-color;
+  border-radius: 3px;
   margin-bottom: 10px;
-  background-color: colors.$input-color;
-  opacity: 0.5;
+  background-color: colors.$white;
 }
 
-::placeholder{
+::placeholder {
   color: colors.$black;
+  padding-left: 10px;
   font-size: 12px;
 }
-
 
 //styles payment product
 .payment-product {
@@ -70,8 +69,12 @@
   gap: 20px;
 }
 
-.payment-product__price--line{
-  border-bottom: 2px solid;
+.payment-product__price p:first-child {
+  width: 100px;
+}
+
+.payment-product__price--line {
+  border-bottom: 2px solid colors.$lightgray;
 }
 
 .payment-product__elements {
@@ -83,6 +86,7 @@
 
 .payment-product__quantity {
   background-color: colors.$white;
+  font-size: 12px;
   border: 2px solid;
   border-radius: 8px;
   width: 30px;
@@ -92,13 +96,7 @@
 
 //styles payment button 
 .payment-product__button {
-  background-color: colors.$lightblue ;
-  color: colors.$white;
-  border: 2px;
-  border-radius: 5px;
-  width: 116px;
-  margin: 10px 0;
-  height: 30px;
+  margin-top: 20px;
 }
 
 
@@ -109,19 +107,19 @@
   .payment {
     width: 100%;
 
-    h1{
+    h1 {
       font-size: 20px;
     }
 
-    h3{
+    h3 {
       font-size: 18px;
     }
 
-    p{
+    p {
       font-size: 14px;
     }
 
-    ::placeholder{
+    ::placeholder {
       font-size: 14px;
     }
   }
@@ -129,6 +127,12 @@
   .payment-form__input {
     width: 560px;
     height: 50px;
+    border-radius: 10px;
+  }
+
+  .payment-product__button {
+    width: 140px;
+    height: 44px;
   }
 }
 
@@ -140,26 +144,34 @@
   .payment {
     width: 1024px;
     margin: 0 auto;
-    //background-color: colors.$white;
     display: flex;
     justify-content: center;
     gap: 20px;
 
-    h1{
-      font-size: 24px;
+    h1 {
+      font-size: 22px;
+      text-align: left;
+      margin-left: 56px;
     }
 
-    h3{
-      font-size: 20px;
-    }
-
-    p{
+    h3 {
       font-size: 18px;
     }
 
-    ::placeholder{
-      font-size: 18px;
+    p {
+      font-size: 16px;
     }
+
+    ::placeholder {
+      font-size: 16px;
+    }
+  }
+
+  .payment-product {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .payment-product__elements {

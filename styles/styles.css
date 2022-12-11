@@ -964,15 +964,15 @@ footer a {
 .payment-form__input {
   width: 200px;
   height: 30px;
-  border: 2px solid #000;
-  border-radius: 10px;
+  border: 1px solid #aba2a2;
+  border-radius: 3px;
   margin-bottom: 10px;
-  background-color: #aba2a2;
-  opacity: 0.5;
+  background-color: #fff;
 }
 
 ::placeholder {
   color: #000;
+  padding-left: 10px;
   font-size: 12px;
 }
 
@@ -991,8 +991,12 @@ footer a {
   gap: 20px;
 }
 
+.payment-product__price p:first-child {
+  width: 100px;
+}
+
 .payment-product__price--line {
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #f5f5f7;
 }
 
 .payment-product__elements {
@@ -1004,6 +1008,7 @@ footer a {
 
 .payment-product__quantity {
   background-color: #fff;
+  font-size: 12px;
   border: 2px solid;
   border-radius: 8px;
   width: 30px;
@@ -1012,13 +1017,7 @@ footer a {
 }
 
 .payment-product__button {
-  background-color: #33abee;
-  color: #fff;
-  border: 2px;
-  border-radius: 5px;
-  width: 116px;
-  margin: 10px 0;
-  height: 30px;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -1040,6 +1039,11 @@ footer a {
   .payment-form__input {
     width: 560px;
     height: 50px;
+    border-radius: 10px;
+  }
+  .payment-product__button {
+    width: 140px;
+    height: 44px;
   }
 }
 @media (min-width: 1024px) {
@@ -1051,16 +1055,24 @@ footer a {
     gap: 20px;
   }
   .payment h1 {
-    font-size: 24px;
+    font-size: 22px;
+    text-align: left;
+    margin-left: 56px;
   }
   .payment h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .payment p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .payment ::placeholder {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .payment-product {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .payment-product__elements {
     display: flex;
