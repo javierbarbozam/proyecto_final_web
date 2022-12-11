@@ -778,6 +778,7 @@ a {
     width: 300px;
   }
   .header__search__input {
+    visibility: visible;
     border: none;
     padding: 5px 0;
     width: 80%;
