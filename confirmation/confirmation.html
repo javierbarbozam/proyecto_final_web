@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../styles/styles.css"/>
   <title>DUFTE | My cart</title>
 </head>
 <body>
@@ -15,30 +17,33 @@
   </header>
   <main>
     <!--Confirm-section-->
-    <section>
-      <ul>
-        <li>Product</li>
-        <li>Price</li>
-        <li>quantity</li>
-        <li>subTotal</li>
-      </ul>
-      <!--gray border goes here-->
-      <div><!--this div can be used for gray color top border-->
-        <button><span>Remove Item</span></button>
-        <div>
-          <img src="../imgs/png/white-headphones.png" alt="">
-          <span> DufteX</span>
+    <section class="confirmCont"><!--Confirm-section-->
+      <div class="confirmCont__descript">
+        <ul class="confirm__list">
+          <li>Product</li>
+          <li>Price</li>
+          <li>quantity</li>
+          <li>subTotal</li>
+        </ul>
+        <!--gray border goes here-->
+        <div class="confirmCont__datas"><!--this div can be used for gray color top border-->
+          <div>
+            <button class="buyInfoContent__closeBnt"><span class="visually-hidden">Remove Item</span></button>
+            <div class="confirmCont__datasimgCont">
+              <img class="confirmCont__img" src="../images/hero-headphones.png" alt="">
+            </div>
+            <span class="confirmCont__datasText">DufteX</span>
+          </div>
+          <span class="confirmCont__datasText">$250.00</span>
+          <span class="confirmCont__datasText">1</span>
+          <span class="confirmCont__datasText">$250.00</span>
         </div>
-        <div>
-          <span>$250.00</span>
-          <p>1</p>
-          <span>$250.00</span>
+        <div class="confirmCont__btns"><!--this div can be used for gray color top border-->
+          <button class="addBtn">Add More +</button>
+          <a class="buyInfoContent__paybtn" href="../payment/payment.html">Buy</a>
         </div>
-        <a href="../payment/payment.html">Buy</a>
-      </div><!--this div can be used for gray bottom border-->
-      <!--gray border goes here-->
-      <button>Add More +</button>
-    </section>
+      </div>
+    </section><!--Confirm-section-->
   </main>
   <footer>
     <div class="footer__wrapper">

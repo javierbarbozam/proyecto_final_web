@@ -310,7 +310,7 @@ a {
   width: 20px;
   height: 20px;
   content: "";
-  background: url("../../icons/plus-icon.svg") no-repeat;
+  background: url("../icons/plus-icon.svg") no-repeat;
 }
 
 .quantity__btn--add:active::after {
@@ -324,7 +324,7 @@ a {
   width: 20px;
   height: 20px;
   content: "";
-  background: url("../../icons/substrat-icon.svg") no-repeat;
+  background: url("../icons/substrat-icon.svg") no-repeat;
 }
 
 .quantity__btn--substract:active::after {
@@ -334,9 +334,8 @@ a {
 .quantity__counter {
   text-align: center;
   background-color: #fff;
-  padding: 10px 15px;
+  padding: 10px 11px;
   border-radius: 10px;
-  margin: 0 10px;
 }
 
 .preview {
@@ -929,6 +928,231 @@ footer a {
   }
   .footer__rights {
     font-size: 18px;
+  }
+}
+.shoppingContent {
+  width: 100%;
+  margin: 60px 0;
+}
+
+.buyInfoContent {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.payContent {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.payContent__text {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 8px;
+}
+
+.payContent__quantityContent {
+  margin-top: 10px;
+}
+
+.payContent__imgCont {
+  margin: 0 15px 0 10px;
+  width: 100px;
+  height: 100px;
+  border-right: 2px solid gray;
+}
+
+.payContent__img {
+  width: 100%;
+  height: 100%;
+}
+
+.buyInfoContent__closeBnt {
+  margin: 0px 0px 15px 0px;
+  position: relative;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.buyInfoContent__closeBnt::after {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url("../icons/close-cart.svg") no-repeat;
+}
+
+.buyInfoContent__closeBnt:active::after {
+  background-size: 99%;
+}
+
+.payContent__removebtn {
+  position: relative;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.payContent__removebtn::after {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  content: "";
+  background: url("../imgs/svg/x-circle 1.svg") no-repeat;
+}
+
+.payContent__removebtn:active::after {
+  background-size: 99%;
+}
+
+.buyInfoContent__paybtn {
+  box-sizing: border-box;
+  background-color: #33abee;
+  color: #fff;
+  font-size: 12px;
+  border-style: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.buyInfoContent__paybtn:hover {
+  background-color: #1294dc;
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .shoppingContent {
+    min-width: 700px;
+    width: 100%;
+  }
+  .payContent__text {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .payContent__imgCont {
+    width: 200px;
+    height: 200px;
+    margin: 0 60px;
+  }
+  .buyInfoContent__closeBnt {
+    margin: 0px 0px 15px 0px;
+  }
+  .buyInfoContent__paybtn {
+    padding: 10px 40px;
+    font-size: 24px;
+    margin: 0 15px 0px 50px;
+  }
+}
+.confirmCont {
+  padding: 51px 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.confirmCont__descript {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.confirm__list {
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmCont__datas {
+  display: flex;
+  padding: 5px 0;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px 20px;
+}
+
+.confirmCont__datasimgCont {
+  width: 60px;
+  height: 60px;
+}
+
+.confirmCont__img {
+  width: 100%;
+  height: 100%;
+}
+
+.confirmCont__datasText {
+  font-size: 12px;
+  width: 55px;
+  text-align: center;
+}
+
+.addBtn {
+  background-color: white;
+  border: none;
+  color: gray;
+  font-size: 14px;
+  margin: 5px 0px 25px 0px;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  transform: scale(1.1);
+}
+
+.addBtn:active::after {
+  background-size: 99%;
+}
+
+.confirmCont__btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .addBtn {
+    font-size: 20px;
+  }
+  .confirmCont__datasText {
+    font-size: 18px;
+    width: 90px;
+  }
+  .confirmCont__btns .buyInfoContent__paybtn {
+    font-size: 20px;
+  }
+  .confirm__list {
+    font-size: 18px;
+  }
+  .confirmCont__datasimgCont {
+    width: 90px;
+    height: 85px;
+  }
+}
+@media (min-width: 1024px) {
+  .addBtn {
+    font-size: 24px;
+  }
+  .confirmCont__datasText {
+    font-size: 22px;
+    width: 100px;
+  }
+  .confirm__list {
+    font-size: 22px;
+  }
+  .confirmCont__datasimgCont {
+    width: 105px;
+    height: 100px;
+  }
+  .confirmCont__btns .buyInfoContent__paybtn {
+    font-size: 24px;
   }
 }
 

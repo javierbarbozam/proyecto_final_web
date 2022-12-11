@@ -149,26 +149,29 @@
         </div>
       </section>
       <!--cart-sectio-->
-      <section>
-        <button>close cart</button>
-        <div>
-          <button><span>Remove Item</span></button>
-          <div><img src="../imgs/png/white-headphones.png" alt="" /></div>
-          <!-- this div can be used for right border gray color gray border goes here -->
-          <div>
-            <!-- this div can be used for left border gray color -->
-            <span>DufteX</span>
-            <span>$250.00</span>
-            <img src="../imgs/svg/white-color-circle.svg" alt="" />
-            <div>
-              <button><span>Remove one item</span></button>
-              <span>1</span>
-              <button><span>Add another item</span></button>
-            </div>
+    </section>
+    <!--cart-sectio-->
+    <section class="shoppingContent"><!--cart-sectio-->
+      <div class="buyInfoContent">
+        <button class="buyInfoContent__closeBnt"><span class="visually-hidden">close cart</span></button>
+        <div class="payContent">
+          <button class="payContent__removebtn"><span class="visually-hidden">Remove Item</span></button>
+          <div class="payContent__imgCont"><img class="payContent__img" src="../images/hero-headphones.png" alt=""></div><!--this div can be used for right border gray color-->
+          <!--gray border goes here-->
+          <div><!--this div can be used for left border gray color-->
+            <span class="payContent__text">DufteX</span>
+            <span class="payContent__text">$250.00</span>
+            <img src="../imgs/svg/white-color-circle.svg" alt="">
+            <div class="payContent__quantityContent">
+              <button class="quantity__btn--substract"><span class="visually-hidden">Remove item</span></button>
+              <span class="quantity__counter">1</span>
+              <button class="quantity__btn--add"><span class="visually-hidden">Add item</span></button>
           </div>
-          <a href="../confirmation/confirmation.html">Buy</a>
         </div>
-      </section>
+        <a class="buyInfoContent__paybtn" href="../confirmation/confirmation.html">pay</a>
+      </div>
+      </div>
+    </section><!--cart-section-->
     </main>
     <footer>
       <div class="footer__stroke"></div>
