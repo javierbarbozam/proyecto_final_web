@@ -18,7 +18,7 @@
           <input class="header__search__input" type="search" placeholder="Search" name="search"/>
         </div>
         <a href="../index.html" class="dufte-title">DUFTE</a>
-        <button class="header__cart"><span>Cart</span></button>
+        <button type="button" id="openModalBtn" class="header__cart"><span>Cart</span></button>
       </div>
     </header>
     <main>
@@ -151,9 +151,9 @@
       <!--cart-sectio-->
     </section>
     <!--cart-sectio-->
-    <section class="shoppingContent"><!--cart-sectio-->
+    <section id="modalWindow" class="shoppingContent"><!--cart-sectio-->
       <div class="buyInfoContent">
-        <button class="buyInfoContent__closeBnt"><span class="visually-hidden">close cart</span></button>
+        <button type="button" id="modalCloseBtn" class="buyInfoContent__closeBnt"><span class="visually-hidden">close cart</span></button>
         <div class="payContent">
           <button class="payContent__removebtn"><span class="visually-hidden">Remove Item</span></button>
           <div class="payContent__imgCont"><img class="payContent__img" src="../images/hero-headphones.png" alt=""></div><!--this div can be used for right border gray color-->
@@ -208,4 +208,5 @@
       </div>
     </footer>
   </body>
+  <script src="../js/modal.js"></script>
 </html>
