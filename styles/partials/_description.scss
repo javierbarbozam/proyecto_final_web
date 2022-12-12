@@ -247,7 +247,7 @@
 .product__description {
   min-width: 320px;
   max-width: 700px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
 }
 
 .product__description-title {
@@ -336,7 +336,6 @@
   .product__description {
     min-width: 768px;
     max-width: 900px;
-    margin: 0 auto 50px auto;
   }
 }
 
@@ -418,6 +417,6 @@
   .product__description {
     min-width: 1024px;
     max-width: 1200px;
-    margin: 60px auto;
+    margin-top: 60px;
   } 
 }

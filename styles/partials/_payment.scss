@@ -96,6 +96,7 @@
 //styles payment button 
 .payment-product__button {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 //responsive 768
@@ -119,7 +120,9 @@
       font-size: 14px;
     }
   }
-
+  .payment-form {
+    margin: 30px
+  }
   .payment-form__input {
     width: 560px;
     height: 50px;

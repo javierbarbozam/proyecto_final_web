@@ -219,9 +219,8 @@ a {
   }
 }
 .visualizer {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 20px auto;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .visualizer__box {
@@ -229,18 +228,18 @@ a {
 }
 
 .visualizer__box__img {
-  width: 90px;
-  height: 110px;
+  width: 150px;
+  height: 180px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   transition-duration: 0.3s;
   transition-property: transform;
 }
 
 .visualizer__box__anchor {
   text-align: center;
-  font-size: 12px;
+  font-size: 22px;
   transition-duration: 0.3s;
   transition-property: transform;
 }
@@ -277,17 +276,12 @@ a {
     width: 100%;
     max-width: 860px;
     margin-top: 50px;
-    margin-bottom: 50px;
     overflow-x: scroll;
     padding: 20px 10px 5px;
   }
   .visualizer__box__img {
     width: 200px;
     height: 250px;
-    margin-bottom: 20px;
-  }
-  .visualizer__box__anchor {
-    font-size: 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -296,16 +290,11 @@ a {
     width: 100%;
     max-width: 1200px;
     margin-top: 100px;
-    margin-bottom: 100px;
     overflow-x: scroll;
   }
   .visualizer__box__img {
     width: 280px;
     height: 330px;
-    margin-bottom: 30px;
-  }
-  .visualizer__box__anchor {
-    font-size: 22px;
   }
 }
 .quantity__btn--add, .quantity__btn--substract {
@@ -578,7 +567,7 @@ a {
 .product__description {
   min-width: 320px;
   max-width: 700px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
 }
 
 .product__description-title {
@@ -649,7 +638,6 @@ a {
   .product__description {
     min-width: 768px;
     max-width: 900px;
-    margin: 0 auto 50px auto;
   }
 }
 @media (min-width: 1024px) {
@@ -712,7 +700,7 @@ a {
   .product__description {
     min-width: 1024px;
     max-width: 1200px;
-    margin: 60px auto;
+    margin-top: 60px;
   }
 }
 .header {
@@ -1039,6 +1027,7 @@ a {
 
 .payment-product__button {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -1056,6 +1045,9 @@ a {
   }
   .payment ::placeholder {
     font-size: 14px;
+  }
+  .payment-form {
+    margin: 30px;
   }
   .payment-form__input {
     width: 560px;
