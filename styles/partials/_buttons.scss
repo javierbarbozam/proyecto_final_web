@@ -2,17 +2,29 @@
 
 // LIGHT BLUE BUTTONS
 
+
+// .btn {
+//   display: inline-block;
+//   box-sizing: border-box;
+//   border-style: none; // revisar
+//   padding: 10px 30px;
+//   border-radius: 50px;
+//   font-size: 16px; 
+//   transition-duration: 0.3s;
+//   transition-property: transform;
+// }
+
 .btn--lightblue {
-  display: inline-block;
-  box-sizing: border-box;
+  display: inline-block; // ya
+  box-sizing: border-box; // ya
   background-color: colors.$lightblue;
   color: colors.$white;
-  font-size: 16px;
-  border-style: none;
-  padding: 10px 30px;
-  border-radius: 50px;
-  transition-duration: 0.3s;
-  transition-property: transform;
+  font-size: 16px; // ya
+  border-style: none; // ya
+  padding: 10px 30px; // ya
+  border-radius: 50px; // ya
+  transition-duration: 0.3s; // ya
+  transition-property: transform; // ya
 }
 
 .btn--lightblue:hover {
