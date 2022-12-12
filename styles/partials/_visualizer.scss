@@ -3,30 +3,28 @@
 // Minimun 320px styles
 
 .visualizer {
-  // 	display: flex;
-  // 	overflow: scroll;
-  width: 200px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
 }
 
 .visualizer__box {
   position: relative;
-  
 }
 
 .visualizer__box__img {
-  width: 150px;
-  height: 180px;
+  width: 90px;
+  height: 110px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   transition-duration: 0.3s;
   transition-property: transform;
 }
 
 .visualizer__box__anchor {
   text-align: center;
-  font-size: 22px;
+  font-size: 12px;
   transition-duration: 0.3s;
   transition-property: transform;
 }
@@ -48,6 +46,7 @@
 .visualizer__box:hover .visualizer__box__img {
   transform: scale(1.1);
 }
+
 .visualizer__box:hover .visualizer__box__anchor {
   transform: scale(1.1);
   transform: translateY(5px);
@@ -64,6 +63,7 @@
     width: 100%;
     max-width: 860px;
     margin-top: 50px;
+    margin-bottom: 50px;
     overflow-x: scroll;
     padding: 20px 10px 5px;   // padding in orden to mantain hover effect intact
   }
@@ -71,8 +71,12 @@
   .visualizer__box__img {
     width: 200px;
     height: 250px;
+    margin-bottom: 20px;
   }
 
+  .visualizer__box__anchor {
+    font-size: 20px;
+  }
 }
 
 // Minimum 1024px styles
@@ -82,14 +86,18 @@
     min-width: 1024px;
     width: 100%;
     max-width: 1200px;
-    margin-top: 100px; // revisar
+    margin-top: 100px;
+    margin-bottom: 100px;
     overflow-x: scroll;
   }
   
   .visualizer__box__img {
     width: 280px;
     height: 330px;
+    margin-bottom: 30px;
   }
 
-
+  .visualizer__box__anchor {
+    font-size: 22px;
+  }
 }

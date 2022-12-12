@@ -12,12 +12,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper">
+      <div class="header-wrapper">
         <div class="header__searchbar">
-          <button class="header__searchbar__icon"><span class="visually-hidden">Search an item</span></button>
-          <input class="header__search__input" type="search" placeholder="Search" name="search"/>
+          <button class="header__searchbar-icon"><span class="visually-hidden">Search an item</span></button>
+          <input class="header__searchbar-input" type="search" placeholder="Search" name="search" >
         </div>
-        <a href="../index.html" class="dufte-title">DUFTE</a>
+        <p class="dufte-title">DUFTE</p>
         <button class="header__cart"><span>Cart</span></button>
       </div>
     </header>
@@ -148,33 +148,34 @@
           </ul>
         </div>
       </section>
-      <!--cart-sectio-->
-      <section>
-        <button>close cart</button>
-        <div>
-          <button><span>Remove Item</span></button>
-          <div><img src="../imgs/png/white-headphones.png" alt="" /></div>
-          <!-- this div can be used for right border gray color gray border goes here -->
-          <div>
-            <!-- this div can be used for left border gray color -->
-            <span>DufteX</span>
-            <span>$250.00</span>
-            <img src="../imgs/svg/white-color-circle.svg" alt="" />
-            <div>
-              <button><span>Remove one item</span></button>
-              <span>1</span>
-              <button><span>Add another item</span></button>
+    </main>
+    <!-- cart code -->
+    <a href="#open-cart">abrir modal (pegar en header)</a>
+    <div id="open-cart" class="cart">
+      <a href="#" class="cart__close-btn"><span class="visually-hidden">Close cart</span></a>
+      <div class="cart-wrapper">
+        <button class="cart-wrapper__btn"><span class="visually-hidden">Remove this item</span></button>
+        <img class="cart-wrapper__img" src="../images/description-headphones-four.png" alt="">
+        <div class="cart-wrapper__info">
+          <div class="cart-wrapper__info-details">
+            <p>DufteX</p>
+            <p>$250.00</p>
+            <div class="cart-wrapper__info-details-color"></div> <!-- picked color -->
+            <div class="cart-wrapper__info-details-quantity">
+              <button class="quantity__btn--substract"><span class="visually-hidden">Remove item</span></button>
+              <span class="quantity__counter">1</span>
+              <button class="quantity__btn--add"><span class="visually-hidden">Add item</span></button>
             </div>
           </div>
-          <a href="../confirmation/confirmation.html">Buy</a>
+          <a class="btn--lightblue" href="../confirmation/confirmation.html">Pay</a>
         </div>
-      </section>
-    </main>
-    <footer>
+      </div>
+    </div>
+    <footer class="footer">
       <div class="footer__stroke"></div>
-      <div class="footer__wrapper">
+      <div class="footer-wrapper">
         <div class="footer--flex">
-          <div class="footer--flex">
+          <div class="footer-info--flex">
             <div class="footer__list">
               <p>Support</p>
               <ul>
@@ -184,7 +185,7 @@
                 <li><a href="#">Authorized Centers</a></li>
               </ul>
             </div>
-            <div class="footer__list footer__list--about-us">
+            <div class="footer__list footer__list--margin">
               <p>About us</p>
               <ul>
                 <li><a href="#">Contact</a></li>
@@ -192,10 +193,10 @@
               </ul>
             </div>
           </div>
-          <div class="footer__social">
-            <a href="#" class="footer__social--instagram"><span class="visually-hidden">go to our instagram</span></a>
-            <a href="#" class="footer__social--facebook"><span class="visually-hidden">go to our facebook</span></a>
-            <a href="#" class="footer__social--email"><span class="visually-hidden">send us an email</span></a>
+          <div class="footer-social">
+            <a href="#" class="footer-social__instagram"><span class="visually-hidden">go to our instagram</span></a>
+            <a href="#" class="footer-social__facebook"><span class="visually-hidden">go to our facebook</span></a>
+            <a href="#" class="footer-social__email"><span class="visually-hidden">send us an email</span></a>
           </div>
         </div>
         <div class="footer__rights">
