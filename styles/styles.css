@@ -940,5 +940,153 @@ a {
     font-size: 18px;
   }
 }
+.payment {
+  width: 100%;
+}
+.payment h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+.payment h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+.payment p {
+  font-size: 12px;
+}
+
+.payment-box {
+  width: 100%;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.payment-form__input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #aba2a2;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+::placeholder {
+  color: #000;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.payment-product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-product__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.payment-product__price p:first-child {
+  width: 100px;
+}
+
+.payment-product__price--line {
+  border-bottom: 2px solid #f5f5f7;
+}
+
+.payment-product__elements {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment-product__quantity {
+  background-color: #fff;
+  font-size: 12px;
+  border: 2px solid;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.payment-product__button {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .payment {
+    width: 100%;
+  }
+  .payment h1 {
+    font-size: 20px;
+  }
+  .payment h3 {
+    font-size: 18px;
+  }
+  .payment p {
+    font-size: 14px;
+  }
+  .payment ::placeholder {
+    font-size: 14px;
+  }
+  .payment-form__input {
+    width: 560px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .payment-product__button {
+    width: 140px;
+    height: 44px;
+  }
+}
+@media (min-width: 1024px) {
+  .payment {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .payment h1 {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 56px;
+  }
+  .payment h3 {
+    font-size: 18px;
+  }
+  .payment p {
+    font-size: 16px;
+  }
+  .payment ::placeholder {
+    font-size: 16px;
+  }
+  .payment-product {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .payment-product__elements {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
