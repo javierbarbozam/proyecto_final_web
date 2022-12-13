@@ -810,6 +810,7 @@ a {
   }
 }
 .footer {
+  margin-top: 20px;
   background-color: #000;
   width: 100%;
   color: #fff;
@@ -888,6 +889,7 @@ a {
 @media (min-width: 768px) {
   .footer {
     height: 450px;
+    margin-top: 40px;
   }
   .footer__stroke {
     height: 12px;
@@ -921,6 +923,9 @@ a {
   }
 }
 @media (min-width: 1024px) {
+  .footer {
+    margin-top: 60px;
+  }
   .footer-wrapper {
     min-width: 900px;
     max-width: 1024px;
