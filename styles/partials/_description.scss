@@ -349,6 +349,10 @@
 
   // Photographs styles
 
+  .preview__gallery {
+    max-height: 480px;
+  }
+
   .preview__gallery--flex {
     row-gap: 15px;
   }
@@ -363,7 +367,8 @@
   }
 
   .preview__pic--main img { // main image size
-    width: 450px;
+    max-width: 430px;
+    max-height: 460px;
   }
 
   .preview__gallery--main { // main image bg size

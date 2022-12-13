@@ -654,6 +654,9 @@ a {
     width: fit-content;
     margin: 60px auto 0;
   }
+  .preview__gallery {
+    max-height: 480px;
+  }
   .preview__gallery--flex {
     row-gap: 15px;
   }
@@ -665,7 +668,8 @@ a {
     width: 140px;
   }
   .preview__pic--main img {
-    width: 450px;
+    max-width: 430px;
+    max-height: 460px;
   }
   .preview__gallery--main {
     width: 450px;
