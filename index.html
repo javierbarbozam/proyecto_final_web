@@ -15,8 +15,8 @@
         <button class="header__searchbar-icon"><span class="visually-hidden">Search an item</span></button>
         <input class="header__searchbar-input" type="search" placeholder="Search" name="search" >
       </div>
-      <p class="dufte-title">DUFTE</p>
-      <button class="header__cart"><span>Cart</span></button>
+      <a href="../index.html" class="dufte-title">DUFTE</a>
+      <a class="header__cart" href="#open-cart"><span>Cart</span></a>
     </div>
   </header>
   <main>
@@ -55,6 +55,27 @@
       </li>
     </ul>
   </main>
+  <!-- cart code -->
+  <div id="open-cart" class="cart">
+    <a href="#" class="cart__close-btn"><span class="visually-hidden">Close cart</span></a>
+    <div class="cart-wrapper">
+      <button class="cart-wrapper__btn"><span class="visually-hidden">Remove this item</span></button>
+      <img class="cart-wrapper__img" src="../images/description-headphones-four.png" alt="">
+      <div class="cart-wrapper__info">
+        <div class="cart-wrapper__info-details">
+          <p>DufteX</p>
+          <p>$250.00</p>
+          <div class="cart-wrapper__info-details-color"></div> <!-- picked color -->
+          <div class="cart-wrapper__info-details-quantity">
+            <button class="quantity__btn--substract"><span class="visually-hidden">Remove item</span></button>
+            <span class="quantity__counter">1</span>
+            <button class="quantity__btn--add"><span class="visually-hidden">Add item</span></button>
+          </div>
+        </div>
+        <a class="btn--lightblue" href="../confirmation/confirmation.html">Buy</a>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
     <div class="footer__stroke"></div>
     <div class="footer-wrapper">
