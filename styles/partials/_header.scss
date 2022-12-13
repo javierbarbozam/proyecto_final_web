@@ -9,7 +9,7 @@
   padding: 0 10px;
 }
 
-.header__wrapper {
+.header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,17 +19,21 @@
   padding: 20px;
 }
 
+.header__title--padding {
+  padding: 20px;
+  text-align: center;
+}
 //SEARCH
-.header__search__input {
+.header__searchbar-input {
   visibility: hidden;
 }
 
-.header__searchbar__icon {
+.header__searchbar-icon {
   background: none;
   border: none;
 }
 
-.header__searchbar__icon::after {
+.header__searchbar-icon::after {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -37,7 +41,7 @@
   background: url("../icons/search-icon.svg") no-repeat;
 } 
 
-.header__searchbar__icon:active::after {
+.header__searchbar-icon:active::after {
   transform: scale(0.8);
 }
 
@@ -72,7 +76,7 @@
 //DESKTOP
 @media (min-width: 1024px){
   // MAIN HEADER
-  .header__wrapper{
+  .header-wrapper{
     padding: 0 110px;
     max-width: 1200px;
   }
@@ -84,7 +88,7 @@
     width: 300px;
   }
 
-  .header__search__input {
+  .header__searchbar-input {
     visibility: visible;
     border: none;
     padding: 5px 0;
@@ -92,16 +96,16 @@
     font-size: 17px;
   }
 
-  .header__search__input::placeholder {
+  .header__searchbar-input::placeholder {
     color: colors.$black;
     visibility: visible;
   }
 
-  .header__search__input:focus-visible {
+  .header__searchbar-input:focus-visible {
     outline: none;
   }
 
-  .header__search__input:focus-visible::placeholder {
+  .header__searchbar-input:focus-visible::placeholder {
     visibility: hidden;
   }
 
