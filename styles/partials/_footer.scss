@@ -2,7 +2,7 @@
 
 // Min width 324px styles
 
-footer {
+.footer {
   background-color: colors.$black;
   width: 100%;
   color: colors.$white;
@@ -21,13 +21,13 @@ footer {
   background-color: colors.$lightblue;
 }
 
-footer a {
+.footer a {
   color: colors.$white;
   cursor: pointer;
   font-size: 12px;
 }
 
-.footer__wrapper {
+.footer-wrapper {
   margin: 0 auto;
   padding: 0 50px;
   min-width: 320px;
@@ -35,12 +35,12 @@ footer a {
   width: 100%
 }
 
-.footer--flex {
+.footer-info--flex {
   display: flex;
   justify-content: space-between;
 }
 
-.footer__list--about-us {
+.footer__list--margin {
   margin-left: 30px;
 }
 
@@ -56,21 +56,21 @@ footer a {
 
 // SOCIAL MEDIA
 
-.footer__social {
+.footer-social {
   text-align: center;
-  padding: 40px 0;
+  margin: 40px 0;
 }
 
-.footer__social--instagram::after {
+.footer-social__instagram::after {
   content: url(../icons/instagram-icon.svg);
   margin-right: 20px;
 }
 
-.footer__social--facebook::after {
+.footer-social__facebook::after {
   content: url(../icons/facebook-icon.svg);
 }
 
-.footer__social--email::after {
+.footer-social__email::after {
   content: url(../icons/email-icon.svg);
   margin-left: 20px;
 }
@@ -83,21 +83,20 @@ footer a {
 // Min width 768px styles
 
 @media (min-width: 768px) {
+  .footer {
+    height: 450px;
+  }
 
   .footer__stroke {
     height: 12px;
   }
 
-  footer {
-    height: 450px;
-  }
-
-  .footer__wrapper {
+  .footer-wrapper {
     min-width: 768px;
     max-width: 900px;
   }
   
-  .footer__list--about-us {
+  .footer__list--margin {
     margin-left: 80px;
   }
   
@@ -105,13 +104,17 @@ footer a {
     font-size: 20px;
   }
 
-  footer a {
+  .footer a {
     font-size: 14px;
   }
 
-  .footer--flex-social-media{
+  .footer--flex {
     display: flex;
     justify-content: space-between;
+  }
+
+  .footer-social {
+    margin: 0;
   }
 
   .footer__rights {
@@ -129,12 +132,12 @@ footer a {
 
 @media (min-width: 1024px) {
   
-  .footer__wrapper {
+  .footer-wrapper {
     min-width: 900px;
     max-width: 1024px;
   }
 
-  .footer__list--about-us {
+  .footer__list--margin {
     margin-left: 100px;
   }
   
@@ -144,7 +147,7 @@ footer a {
     margin: 0 0 40px 0;
   }
 
-  footer a {
+  .footer a {
     font-size: 18px;
   }
     
