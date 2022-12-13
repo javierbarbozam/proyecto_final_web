@@ -1027,6 +1027,7 @@ a {
 
 .payment-product__button {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -1044,6 +1045,9 @@ a {
   }
   .payment ::placeholder {
     font-size: 14px;
+  }
+  .payment-form {
+    margin: 30px;
   }
   .payment-form__input {
     width: 560px;
